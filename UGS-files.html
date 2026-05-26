@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>UGS Files</title>
+    <style>
+        body {
+            font-family:Chalkduster;
+            background: url('https://entraptas-secret-project.nekoweb.org/IMG_0282.gif');
+            min-height: 27px;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            color:blueviolet;
+        }
+           .main-content {
+            margin-left: 100px;
+            flex: 1;
+            padding: 20px;
+        }
+
+        h1 {
+            color: blueviolet;
+            text-align: center;
+            margin-bottom: 30px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .letter-section {
+            margin-bottom: 40px;
+            padding: 0 20px;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+            min-height: 100px;
+        }
+
+        .letter-section.empty {
+            opacity: 0.5;
+        }
+
+        .letter-header {
+            color: white;
+            font-size: 32px;
+            font-weight: bold;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid rgba(255,255,255,0.3);
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .buttons-container {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            align-items: center;
+        }
+
+        .empty-message {
+            color: rgba(255,255,255,0.6);
+            font-style: italic;
+            text-align: center;
+            padding: 20px;
+        }
+
+        input[type="button"] {
+            background: blueviolet;
+            border-color: pink;
+            padding: 15px 30px;
+            font-size: 16px;
+            font-weight: 500;
+            border-radius: 8px;
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            width: 100%;
+            max-width: 600px;
+            color: violet;
+            text-align: left;
+        }
+
+        input[type="button"]:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+            background: plum;
+        }
+
+        input[type="button"]:active {
+            transform: translateY(0);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        @media (max-width: 768px) {
+            .sidebar {
+                width: 60px;
+                padding: 15px 5px;
+            }
+            .sidebar-btn {
+                padding: 8px;
+                font-size: 16px;
+            }
+            .main-content {
+                margin-left: 70px;
+            }
+        }
+    </style>
+</head>
+<body>
+ <div class="main-content">
+        <h1>The Space Game Launcher</h1>
+    <marquee behavior="scroll" direction="left" scrollamount="30">This is a modified version of the game launcher!</marquee>
+     <div id="sections-container">  
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/gh/entraptadoeztech/The_Unity_Proxy_Project@refs/heads/main/games.js"></script>
+   </body> 
+   </html>

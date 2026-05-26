@@ -3023,7 +3023,7 @@ function generateAllSections() {
           const encoded = encodeURIComponent(normalized);
 
           fetch(
-            `https://cdn.jsdelivr.net/gh/entraptadoeztech/The-Unity-proxy-game-stash@refs/heads/main/${encoded}?t=${Date.now()}`,
+            `https://github.com/entraptadoeztech/ugs-singlefile/tree/main/UGS-Files/${encoded}?t=${Date.now()}`,
           )
             .then((response) => response.text())
             .then((text) => {

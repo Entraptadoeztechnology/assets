@@ -4,3 +4,13 @@
 <br>
 This project is a central but decentralized
 project for games so basically its a gaming hub
+# Implementation
+<ol>
+  <li>
+    Run one of these .html files in a <strong> HTML code editor</strong>
+    <li> If that is blocked use <strong>VS code</strong></li>
+  <li> If that is somehow blocked, use <strong>code.org</strong></li>
+  <li>Use your district's "dev account"</li>
+  </li>
+</ol>
+<br>

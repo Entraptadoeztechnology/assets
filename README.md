@@ -1,5 +1,5 @@
 # The_Unity_Project
-⚠️ <b>this is the most stable project on my github profile</b>⚠️
+<b>⚠️ this is the most stable project on my github profile</b>⚠️
 <br>
 <br>
 This project is a central but decentralized
@@ -13,4 +13,4 @@ project for games so basically its a gaming hub
   <li>Use your district's "dev account"</li>
   </li>
 </ol>
-<br>
+<h1>Tech behind this</h1>

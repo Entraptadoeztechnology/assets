@@ -23,5 +23,6 @@ project for games so basically its a gaming hub
 <b>You can build a bypass using my <strong><a href= "guide.html">guide.html</a></strong></b>
 <img width="280" height="280" alt="image" src="https://github.com/user-attachments/assets/6d4bf14f-58fb-43f2-b635-f42b2af7f5f9" />
 <h3>Thats all bye!!!!</h3>
+<b>update: nekoweb <strong>BANNED</strong> me because I think I violated the AUP🥲(I don't usually like AUPs)</b>
 
 

@@ -1,6 +1,6 @@
 
-const targetUser = 'CalcSolver';
-        const targetRepo = 'Wii';
+const targetUser = 'entraptadoeztech';
+        const targetRepo = 'wii';
         const targetBranch = 'main';
         const githackBaseUrl = `https://raw.githack.com/${targetUser}/${targetRepo}/${targetBranch}/`;
 

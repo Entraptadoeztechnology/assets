@@ -1,6 +1,6 @@
 
 const targetUser = 'entraptadoeztech';
-        const targetRepo = 'wii';
+        const targetRepo = 'Wii';
         const targetBranch = 'main';
         const githackBaseUrl = `https://raw.githack.com/${targetUser}/${targetRepo}/${targetBranch}/`;
 

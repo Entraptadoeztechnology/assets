@@ -1,0 +1,123 @@
+<html>
+ <head>
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8" />
+    <title>Clever | Portal</title>
+    <link rel="icon" type="image/png" href="https://entraptas-secret-project.nekoweb.org/IMG_0320.jpeg">
+    <style>
+        body {
+            color: #C338FF;
+            backface-visibility: 0;
+            background-color: purple;
+            font-family: Chalkduster;
+            background-image: url('https://entraptas-secret-project.nekoweb.org/IMG_0298.gif');
+            background-repeat: repeat;
+            background-size: auto;
+
+        }
+        .bunny{
+color:skyblue;
+font-size:25px;
+}
+.k{
+font-size:20px;
+color:white;
+stroke-color:skyblue;
+}
+a {
+  color:skyblue;
+}
+
+        .sidebar {
+            height: 100%;
+            width: 250px;
+            /* Default width */
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: #31174D;
+            overflow-x: hidden;
+            transition: width 0.3s ease;
+            padding-top: 60px;
+        }
+
+        /* Sidebar links */
+        .sidebar a {
+            padding: 10px 15px;
+            text-decoration: none;
+            font-size: 18px;
+            color: violet;
+            display: block;
+            transition: background 0.2s;
+        }
+
+        .sidebar a:hover {
+            background-color: skyblue;
+        }
+
+        /* Main content */
+        .main {
+            margin-left: 0px;
+            /* Same as sidebar width */
+            padding: 0px;
+            transition: margin-left 0.3s ease;
+        }
+
+        /* Closed sidebar */
+        .sidebar.closed {
+            width: 0;
+            padding-top: 0px;
+        }
+
+        .main.closed {
+            margin-left: 0;
+        }
+
+        /* Toggle button */
+        .toggle-btn {
+            position: fixed;
+            top: 15px;
+            left: 15px;
+            font-size: 20px;
+            background: white;
+            color: blueviolet;
+            border: none;
+            padding: 9px 9px;
+            cursor: pointer;
+            z-index: 1000;
+        }
+        </style>
+</head>
+<body>
+  <button class="toggle-btn" onclick="toggleSidebar()"></button>
+  <div id="mainContent" class = "main">
+    <!--replace this URL to any school website!-->
+<iframe src="https://clever.com" style="border: none; width:100%; height:100%;" frameborder="0"></iframe>
+
+
+
+<!-- Sidebar -->
+<div id="mySidebar" class="sidebar">
+    <script>
+function toggleSidebar() {
+    const sidebar = document.getElementById("mySidebar");
+    const main = document.getElementById("mainContent");
+
+    sidebar.classList.toggle("closed");
+    main.classList.toggle("closed");
+}
+</script>
+  <center>
+<div class = "bunny">The TIME project</div>
+<br>
+    <img src="https://raw.githack.com/entraptadoeztech/The_Unity_Proxy_Project/refs/heads/main/assets/IMG_0366.jpeg"
+ width = "85%" height="50%"/>
+</center>
+<br>
+<br>
+<div class = "k">What if you could go back to a time when most games were not blocked.... <b>NOW YOU CAN</b></div>
+<center>
+<a href = "https://raw.githack.com/entraptadoeztech/The_Unity_Proxy_Project/refs/heads/main/UGS-files.html">try this... NOW!!!</a>
+</center>
+</body>
+</html>

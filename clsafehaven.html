@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+    <style>
+        html{
+            background:url('https://cdn.jsdelivr.net/gh/entraptadoeztech/The_Unity_Proxy_Project@refs/heads/main/assets/IMG_0417.gif'), url('https://cdn.jsdelivr.net/gh/entraptadoeztech/The_Unity_Proxy_Project@refs/heads/main/assets/IMG_0423.gif'), url('https://cdn.jsdelivr.net/gh/entraptadoeztech/The_Unity_Proxy_Project@refs/heads/main/assets/IMG_0417.gif');
+            color:magenta;
+            stroke-color:blueviolet;
+            font-display: cursive;
+            
+        }
+        .l{
+           font-size:20px;
+           stroke-color:red;
+        }
+.pop {
+font-size:20px;
+text-align:center; /* looks weird often if not aligned in center */
+-webkit-animation: pop 1s ease-in-out infinite alternate;
+-moz-animation: pop 0.5s ease-in-out infinite alternate;
+animation: pop 0.5s ease-in-out infinite alternate;
+}
+
+@keyframes pop {
+from { transform:scale(0.9) }
+50% { transform:scale(2.5) }
+to { transform:scale(0.95) }
+}
+
+@-webkit-keyframes pop {
+from { -webkit-transform:scale(0.95) }
+50% { -webkit-transform:scale(1) }
+to { -webkit-transform:scale(0.95) }
+}
+    </style>
+    <meta charset="UTF-8">
+    <title>Welcome to the Lab!</title>
+</head>
+<body>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+<center>
+    <div class="login-container">
+        <h2>Welcome to The Secret Lab Login Page!</h2>
+        <div class = "pop">
+            <a href ="https://rawcdn.githack.com/entraptadoeztech/The_Unity_Proxy_Project/refs/heads/main/assets/aup.html">
+        <div class = "l">Only Authorized Staff Allowed!</div>
+        </a>
+        <br>
+        </div>
+        <form id="loginForm">
+            <div>
+                <label for="username">Username:</label>
+                <input type="text" id="username" required autocomplete="username">
+            </div>
+            <br>
+            <div>
+                <label for="password">Password:</label>
+                <input type="password" id="password" required autocomplete="current-password">
+            </div>
+            <br>
+            <button type="submit">Log In</button>
+        </form>
+        <p id="errorMessage" style="color: red; display: none;">Invalid username or password.</p>
+    </div>
+</center>
+    <!-- JavaScript code handles validation -->
+    <script>
+        // Array holding multiple username and password configurations
+const validUsers = [
+    { username: "lain", password: "'admin OR 1 == 1" },
+    { username: "entrapta", password: "modoka" },
+    { username: "guest", password: "-" }
+];
+
+document.getElementById('loginForm').addEventListener('submit', function(event) {
+    // Prevent the form from submitting normally and refreshing the page
+    event.preventDefault(); 
+
+    // Capture the values entered by the user
+    const usernameInput = document.getElementById('username').value;
+    const passwordInput = document.getElementById('password').value;
+    const errorMessage = document.getElementById('errorMessage');
+
+    // Use .find() to check if the exact combination exists in our array
+    const userFound = validUsers.find(user => 
+        user.username === usernameInput && user.password === passwordInput
+    );
+
+    if (userFound) {
+        // Clear errors and redirect the user or load protected content
+        errorMessage.style.display = 'none';
+        alert("Login successful! Redirecting To The Main Page...");
+        window.location.href = "https://rawcdn.githack.com/Entraptadoeztechnology/The_Unity_Proxy_Proje/refs/heads/main/index.html"; // Replace with your target page
+    } else {
+        // Show an error message if the credentials don't match
+        errorMessage.style.display = 'block';
+    }
+});
+
+    </script>
+</body>
+</html>
